@@ -36,23 +36,48 @@ Page Fullness: 74,74 %
 ### c)
 
 ```
-... Write here your answer ...
+65: 44250ms
+
+80: 57092ms
+
+90: 52620ms
+
+O de 65 é muito mais eficiente em termos de tmepo inserção.
 ```
 
 ### d)
 
 ```
-... Write here your answer ...
+65: 47830ms
+
+80: 48342ms
+
+90: 49285ms
+
+Ao utilizarmos para o tipo IDENTITY garante tempos de inserção mais otimizados e eficientes.
 ```
 
 ### e)
 
 ```
-... Write here your answer ...
+CREATE NONCLUSTERED INDEX AT1 ON mytemp(at1);
+CREATE NONCLUSTERED INDEX AT2 ON mytemp(at2);
+CREATE NONCLUSTERED INDEX AT3 ON mytemp(at3);
+CREATE NONCLUSTERED INDEX LIXO ON mytemp(lixo);
+
+Sem: 113690 ms
+Com: 118312 ms
+
+As operações REMOVE e INSERT demoram mais a serem concluídas ao adicionar INDEXES.
 ```
 
 ## ​9.3.
 
 ```
-... Write here your answer ...
+i. CREATE UNIQUE CLUSTERED INDEX IxSsn ON EMPLOYEE(Ssn);
+ii. CREATE INDEX IxFnameLname ON EMPLOYEE(Fname, Lname);
+iii. CREATE INDEX IxEmpDep ON EMPLOYEE(Dno);
+iv. CREATE INDEX IxWorksOnPno on WORKS_ON(Pno);
+v. CREATE INDEX IxDpndEssn ON DEPENDENT(Essn);
+vi. CREATE INDEX IxProjDnum ON PROJECT(Dnum);
 ```
